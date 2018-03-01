@@ -54,17 +54,13 @@ h2 {
   padding: 30px 100px;
   font-weight: 200;
 }
-.header--left {
-  display: flex;
-  align-items: center;
-}
 .header--right {
   display: flex;
   justify-content: space-between;
 }
 .header-logo {
-  max-width: 30px;
-  max-height: 30px;
+  max-width: 40px;
+  max-height: 40px;
   margin-right: 5px;
 }
 .header-options {
