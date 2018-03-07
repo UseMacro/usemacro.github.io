@@ -83,7 +83,7 @@ h2 {
   justify-content: space-around;
 }
 .main--right {
-
+  position: relative;
 }
 .main-text {
   max-width: 300px;
@@ -99,6 +99,12 @@ h2 {
 }
 .main-image {
   max-width: 700px;
+}
+.main-demo {
+  position: absolute;
+  top: 43px;
+  left: 83px;
+  width: 536px;
 }
 
 /* section: supported */
