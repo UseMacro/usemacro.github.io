@@ -4,6 +4,8 @@ let panel = null;
 let panelBg = null;
 let panelClose = null;
 
+let messengerHtml = '<a href="https://messenger.com/" target="_blank"> <button class="panel-button"> Try Macro on Messenger </button> </a>';
+
 function showPanel() {
   panel.style.display = 'block';
   document.body.style.overflowY = 'hidden';
@@ -26,6 +28,9 @@ function togglePanel() {
 
 function addToChrome() {
   chrome.webstore.install(storeUrl, () => {
+    let title = document.getElementById('panel-title');
+    title.innerHTML = 'Thanks for installing Macro!';
+    $('#panel-placeholder').html($(messengerHtml));
     showPanel();
   }, (error, errorCode) => {
     console.log('error: ' + error + ', error code: ' + errorCode);
