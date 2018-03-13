@@ -90,6 +90,7 @@ h2 {
 }
 .main-button {
   background-color: #2B91D9;
+  border: none;
   padding: 12px;
   margin: 20px 0px;
   width: 135px;
@@ -187,18 +188,57 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding: 60px 0px 40px 0px;
-  background-color: #F7FCFF;
+  background-color: #00304D;
   /* background-color: #FFFFFF; */
 }
 
-/* section: footer */
-.section-footer {
+/* section: get */
+.section-team {
+  width: 100%;
+  padding: 40px 0px 40px 0px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-flex {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-top: 1px #DDD solid;
-  padding: 3px;
-  background-color: #FFFFFF;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.person-container {
+  height: 150px;
+  width: 200px;
+  padding: 24px 16px;
+}
+
+.portrait {
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+}
+
+.person-info {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.person-name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.person-name {
+  font-size: 18px;
+}
+
+.link-contact {
+  text-decoration: underline;
+  color: #242D33;
 }
 
 .panel {
