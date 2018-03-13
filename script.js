@@ -33,7 +33,7 @@ function addToChrome() {
     $('#panel-placeholder').html($(messengerHtml));
     showPanel();
   }, (error, errorCode) => {
-    console.log('error: ' + error + ', error code: ' + errorCode);
+    console.error('error: ' + error + ', error code: ' + errorCode);
   });
 }
 
@@ -47,10 +47,4 @@ $(document).ready(() => {
   key('esc', hidePanel);
   $(panelBg).click(hidePanel);
   $(panelClose).click(hidePanel);
-
-  if (chrome.app.isInstalled) {
-    $('.add-to-chrome').text('Already installed');
-  } else {
-    $('.add-to-chrome').click(addToChrome);
-  }
 });
