@@ -318,6 +318,15 @@ h2 {
 }
 
 .key {
+  background: #fff;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(0,0,0,.08);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 4px 8px;
+}
+
+.key-blue {
   background: #178FE5;
   box-sizing: border-box;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
