@@ -117,16 +117,17 @@ h2 {
 .section-supported {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: flex-start;
+  width: 900px;
   padding: 0px 100px 64px 100px;
-  margin-top: 64px;
+  margin: 64px auto;
 }
 .supported-sites {
   margin-top: 10px;
 }
 .site-icon {
   height: 25px;
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* section: description 1 */
