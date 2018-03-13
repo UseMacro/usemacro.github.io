@@ -1,3 +1,4 @@
+let storeUrl = 'https://chrome.google.com/webstore/detail/pgffhcglkcdpalkgpkkghpofcoibodak';
 let isShowing = false;
 let panel = null;
 let panelBg = null;
@@ -24,13 +25,11 @@ function togglePanel() {
 }
 
 function addToChrome() {
-  chrome.webstore.install('https://chrome.google.com/webstore/detail/pgffhcglkcdpalkgpkkghpofcoibodak',
-      () => {
-        showPanel();
-      },
-      (error, errorCode) => {
-        console.log('error: ' + error + ', error code: ' + errorCode);
-      });
+  chrome.webstore.install(storeUrl, () => {
+    showPanel();
+  }, (error, errorCode) => {
+    console.log('error: ' + error + ', error code: ' + errorCode);
+  });
 }
 
 $(document).ready(() => {
