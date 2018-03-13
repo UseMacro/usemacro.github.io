@@ -23,13 +23,30 @@ function togglePanel() {
   }
 }
 
+function addToChrome() {
+  chrome.webstore.install('https://chrome.google.com/webstore/detail/pgffhcglkcdpalkgpkkghpofcoibodak',
+      () => {
+        showPanel();
+      },
+      (error, errorCode) => {
+        console.log('error: ' + error + ', error code: ' + errorCode);
+      });
+}
+
 $(document).ready(() => {
   panel = document.getElementById('panel');
   panelBg = document.getElementById('panel-background');
+  panelClose = document.getElementById('panel-close');
   panelClose = document.getElementById('panel-close');
 
   key('alt+/,opt+/', togglePanel);
   key('esc', hidePanel);
   $(panelBg).click(hidePanel);
   $(panelClose).click(hidePanel);
+
+  if (chrome.app.isInstalled) {
+    $('.add-to-chrome').text('Already installed');
+  } else {
+    $('.add-to-chrome').click(addToChrome);
+  }
 });
