@@ -47,4 +47,5 @@ $(document).ready(() => {
   key('esc', hidePanel);
   $(panelBg).click(hidePanel);
   $(panelClose).click(hidePanel);
+  $('.add-to-chrome').click(addToChrome);
 });
