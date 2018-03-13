@@ -226,3 +226,19 @@ h2 {
   transform: translate(-50%,-50%);
   top: 50%;
 }
+
+.panel-box {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.panel-close {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  left: 18px;
+  top: 18px;
+  background-color: red;
+  position: absolute;
+}

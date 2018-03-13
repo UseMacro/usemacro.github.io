@@ -1,6 +1,7 @@
 let isShowing = false;
-let panel = document.getElementById('panel');
-let panelBg = document.getElementById('panel-background');
+let panel = null;
+let panelBg = null;
+let panelClose = null;
 
 function showPanel() {
   panel.style.display = 'block';
@@ -23,9 +24,12 @@ function togglePanel() {
 }
 
 $(document).ready(() => {
+  panel = document.getElementById('panel');
+  panelBg = document.getElementById('panel-background');
+  panelClose = document.getElementById('panel-close');
+
   key('alt+/,opt+/', togglePanel);
-
   key('esc', hidePanel);
-
   $(panelBg).click(hidePanel);
+  $(panelClose).click(hidePanel);
 });
