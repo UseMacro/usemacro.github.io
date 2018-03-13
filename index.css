@@ -311,6 +311,7 @@ h2 {
   border: none;
   border-radius: 2px;
   transition: 0.2s box-shadow;
+  margin-bottom: 16px;
 }
 
 .panel-button:hover {
