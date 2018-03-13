@@ -1,5 +1,6 @@
 let isShowing = false;
 let panel = document.getElementById('panel');
+let panelBg = document.getElementById('panel-background');
 
 function showPanel() {
   panel.style.display = 'block';
@@ -22,7 +23,9 @@ function togglePanel() {
 }
 
 $(document).ready(() => {
-  key('alt+/,opt+/', (event, handler) => {
-    togglePanel();
-  });
+  key('alt+/,opt+/', togglePanel);
+
+  key('esc', hidePanel);
+
+  $(panelBg).click(hidePanel);
 });
