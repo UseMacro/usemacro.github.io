@@ -178,7 +178,8 @@ h2 {
   max-width: 550px;
 }
 .cards-img {
-  max-width: 400px;
+  max-width: 300px;
+  margin-right: 100px;
 }
 
 /* section: description 2 */
