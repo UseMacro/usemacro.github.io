@@ -117,6 +117,12 @@ h2 {
   left: 71px;
   width: 460px;
 }
+.open-chrome {
+  color: #242D33;
+  opacity: 0.4;
+  font-size 12px;
+  padding-top: 4px;
+}
 
 /* section: supported */
 .section-supported {
