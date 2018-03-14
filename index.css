@@ -45,6 +45,11 @@ h2 {
 .white-font {
   color: #FFFFFF;
 }
+.link,
+.link:visited {
+  text-decoration: underline;
+  color: #242D33;
+}
 
 /* header */
 .header {
@@ -129,6 +134,37 @@ h2 {
   height: 25px;
   padding-right: 15px;
 }
+
+.section-about {
+  background-color: #F7FCFF;
+  width: 100%;
+  padding: 64px 0;
+}
+.section-container {
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.about-text {
+  width: 550px;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #242D33;
+  opacity: 0.6;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.about-logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-image: url(./assets/logo_hd.png);
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+}
+
 
 /* section: description 1 */
 .section-description-1 {
